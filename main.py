@@ -28,4 +28,3 @@ if uploaded_file is not None:
 #Добавим ссылку на чат в телеграм
 url = "https://t.me/+qHHDOyGAj9llM2Qy"
 st.write("Ссылка для перехода в чат с материалами [link](%s)" % url)
-st.markdown("Тест [link](%s)" % url)
