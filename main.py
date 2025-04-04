@@ -6,6 +6,10 @@ import io
 #Заголовок приложения
 st.title("Распознавание изображений с помощью Hugging Face")
 
+#Добавим ссылку на чат в телеграм
+url = "https://t.me/+qHHDOyGAj9llM2Qy"
+st.write("Ссылка для перехода в чат с материалами [link](%s)" % url)
+
 #Заголовок приложения
 uploaded_file = st.file_uploader("Загрузите изображение", type = ["jpg", "jpeg", "png"])
 
@@ -25,6 +29,4 @@ if uploaded_file is not None:
     for result in results:
         st.write(f"{result['label']}: {result['score']:.2f}")
         
-#Добавим ссылку на чат в телеграм
-url = "https://t.me/+qHHDOyGAj9llM2Qy"
-st.write("Ссылка для перехода в чат с материалами [link](%s)" % url)
+
