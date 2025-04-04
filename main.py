@@ -24,3 +24,8 @@ if uploaded_file is not None:
     st.write("**Результаты распознавания**")
     for result in results:
         st.write(f"{result['label']}: {result['score']:.2f}")
+        
+#Добавим ссылку на чат в телеграм
+url = "https://t.me/+qHHDOyGAj9llM2Qy"
+st.write("Ссылка для перехода в чат с материалами [link](%s)" % url)
+st.markdown("Тест [link](%s)" % url)
