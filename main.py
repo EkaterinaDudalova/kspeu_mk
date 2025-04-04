@@ -1,8 +1,6 @@
 import streamlit as st
 from transformers import pipeline
 from PIL import Image
-import io
-
 #Заголовок приложения
 st.title("Распознавание изображений с помощью Hugging Face")
 
@@ -10,7 +8,7 @@ st.title("Распознавание изображений с помощью Hu
 url = "https://t.me/+qHHDOyGAj9llM2Qy"
 st.write("Ссылка для перехода в чат с материалами [тык](%s)" % url)
 
-#Заголовок приложения
+#Добавляем блок с загрузкой изображения от пользователя
 uploaded_file = st.file_uploader("Загрузите изображение", type = ["jpg", "jpeg", "png"])
 
 #Проверка, загружено ли изображение
